@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+
+main {
+  padding: 40px;
+}
+/* css position */
+.parent {
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  height: 300px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.parent .child {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  box-shadow: 3px 4px 5px rgba(31, 31, 31, 0.568);
+}
+/* absolute =overlay seperti melayang,tidak terikat aturan*/
+/* relatif= mau mau engga2 */
+/* Z index untuk behind/forward */
+.parent .c1 {
+  background-color: aquamarine;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: -1;
+}
+
+.parent .c2 {
+  background-color: blue;
+}
+
+.parent .c3 {
+  background-color: blueviolet;
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+}
+
+.hero .car {
+  color: rgb(253, 253, 253);
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  font-size: 30px;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.452);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  height: 60px;
+  background-color: orange;
+  color: aliceblue;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+  position: relative;
+}
+
+.navbar span {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 100;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+}
+
+.navbar .menu {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
